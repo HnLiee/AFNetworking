@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5qv-ID-5Sd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UE8-I8-44Y">
+                                <rect key="frame" x="66" y="189" width="242" height="30"/>
+                                <state key="normal" title="AFHTTPRequestOperationManager">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z23-u5-JRf" kind="show" id="xi3-KE-y2y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5B-Le-OTQ">
+                                <rect key="frame" x="106" y="254" width="163" height="30"/>
+                                <state key="normal" title="AFURLSessionManager">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rDn-7N-19q" kind="show" id="hPN-yP-jgs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Y-7I-8oA">
+                                <rect key="frame" x="101" y="322" width="172" height="30"/>
+                                <state key="normal" title="AFHTTPSessionManager">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IIb-Ni-NMw" kind="show" id="alJ-dM-Q5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-ab-fbV">
+                                <rect key="frame" x="77" y="389" width="221" height="30"/>
+                                <state key="normal" title="AFNetworkReachabilityManager">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hpK-Q5-ddK" kind="show" id="66b-aw-Txf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucy-ig-yNX">
+                                <rect key="frame" x="96" y="124" width="182" height="30"/>
+                                <state key="normal" title="AFHTTPRequestOperation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uaO-rw-c4D" kind="show" id="Yhd-GB-ODP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EpG-wF-M2U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658.5" y="473.5"/>
+        </scene>
+        <!--Req Op MgrVC-->
+        <scene sceneID="m51-Xr-ECk">
+            <objects>
+                <viewController id="z23-u5-JRf" customClass="AFHTTPReqOpMgrVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ekN-fC-bTA"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIP-yn-dvU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IQi-e8-Muw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-Dt-LJd">
+                                <rect key="frame" x="122" y="145" width="130" height="30"/>
+                                <state key="normal" title="GET">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="z23-u5-JRf" eventType="touchUpInside" id="Bbp-Nx-4Bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi1-uo-gjO">
+                                <rect key="frame" x="113" y="212" width="148" height="30"/>
+                                <state key="normal" title="POST Form-Encoded">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="POSTFormEncoded:" destination="z23-u5-JRf" eventType="touchUpInside" id="Oe0-8t-n5E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1v-En-phb">
+                                <rect key="frame" x="122" y="290" width="130" height="30"/>
+                                <state key="normal" title="POST Multi-Part">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="POSTMultiPart:" destination="z23-u5-JRf" eventType="touchUpInside" id="Zc3-59-6og"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jW-sr-DL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281.5" y="1356.5"/>
+        </scene>
+        <!--Session ManagerVC-->
+        <scene sceneID="Rsm-Yo-0i6">
+            <objects>
+                <viewController id="rDn-7N-19q" customClass="AFURLSessionManagerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yC3-dp-ok4"/>
+                        <viewControllerLayoutGuide type="bottom" id="rf0-VV-bmw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mej-0t-LCF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAJ-lz-XqT">
+                                <rect key="frame" x="157" y="159" width="60" height="30"/>
+                                <state key="normal" title="下载歌曲">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadSong:" destination="rDn-7N-19q" eventType="touchUpInside" id="dOf-lJ-1Aj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2j-jo-vDU">
+                                <rect key="frame" x="123" y="280" width="128" height="30"/>
+                                <state key="normal" title="上传图片Multi-Part">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadMultiPart:" destination="rDn-7N-19q" eventType="touchUpInside" id="63S-2b-WgV"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-oP-r0N">
+                                <rect key="frame" x="112" y="376" width="150" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo3-tC-lkD">
+                                <rect key="frame" x="64" y="216" width="247" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="downloadProgress" destination="Uo3-tC-lkD" id="D2U-Jk-eMw"/>
+                        <outlet property="uploadProgress" destination="0fi-oP-r0N" id="3iE-9J-g2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoG-cf-ITj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658.5" y="1356.5"/>
+        </scene>
+        <!--Net State MonitorVC-->
+        <scene sceneID="O6O-Ds-GUE">
+            <objects>
+                <viewController id="hpK-Q5-ddK" customClass="AFNetStateMonitorVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DVy-9Q-WO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="nOz-z0-VkS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wyK-ny-Bbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HM-Cx-GgD">
+                                <rect key="frame" x="103" y="157" width="168" height="31"/>
+                                <state key="normal" title="网络状态--开始监听">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="网络状态--结束监听">
+                                    <color key="titleColor" red="1" green="0.27410425823365303" blue="0.17750410116325077" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOrEndMonitor:" destination="hpK-Q5-ddK" eventType="touchUpInside" id="xKR-8b-Wtm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="monitorBtn" destination="8HM-Cx-GgD" id="olO-bX-MAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uN2-1I-wwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408.5" y="1356.5"/>
+        </scene>
+        <!--Session MgrVC-->
+        <scene sceneID="QFy-a2-9fo">
+            <objects>
+                <viewController id="IIb-Ni-NMw" customClass="AFHTTPSessionMgrVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vbW-Ye-gmp"/>
+                        <viewControllerLayoutGuide type="bottom" id="mb2-89-hzn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UwY-4i-sDp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5x-Tf-sMs">
+                                <rect key="frame" x="144" y="152" width="87" height="30"/>
+                                <state key="normal" title="GET">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="IIb-Ni-NMw" eventType="touchUpInside" id="caD-EE-gCY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MA-AF-UN9">
+                                <rect key="frame" x="116" y="236" width="142" height="30"/>
+                                <state key="normal" title="POST form-encoded">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="POSTFormencoded:" destination="IIb-Ni-NMw" eventType="touchUpInside" id="Uc2-wj-nSC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atY-7Q-EJb">
+                                <rect key="frame" x="131" y="319" width="112" height="30"/>
+                                <state key="normal" title="POST Multi-Part">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="POSTMultiPart:" destination="IIb-Ni-NMw" eventType="touchUpInside" id="fdz-9j-Wbu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATP-ia-Q4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.5" y="1356.5"/>
+        </scene>
+        <!--Req OpVC-->
+        <scene sceneID="VPw-Tu-E2O">
+            <objects>
+                <viewController id="uaO-rw-c4D" customClass="AFHTTPReqOpVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JN3-xd-U3E"/>
+                        <viewControllerLayoutGuide type="bottom" id="33H-6R-Kkm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pc0-tY-p3O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vP-6r-aBo">
+                                <rect key="frame" x="122" y="142" width="130" height="30"/>
+                                <state key="normal" title="GET">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="uaO-rw-c4D" eventType="touchUpInside" id="r6d-5y-Mun"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPg-T2-hHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94.5" y="1356.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3N3-5j-nir">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5qv-ID-5Sd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a7l-U6-hTK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="UPk-Mb-bx6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCj-ma-htZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658.5" y="-316.5"/>
+        </scene>
+    </scenes>
+</document>
